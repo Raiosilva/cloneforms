@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :questions_answer do
-    value { Faker::Lorem.phrase }
+    value { Faker::Lorem.sentence }
     answer
     question
   end

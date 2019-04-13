@@ -9,7 +9,7 @@ FactoryBot.define do
     email        { Faker::Internet.email }
     name         { Faker::Name.name }
     nickname     { Faker::Internet.user_name }
-    password     { Faker::Lorem.word }
+    password     { Faker::Internet.password }
     provider     {'email'}
     confirmed_at {timestamp}
     created_at   {timestamp}
