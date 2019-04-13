@@ -6,7 +6,7 @@ RSpec.describe "Api::V1::Forms", type: :request do
       @user = create(:user)
     end
 
-<<<<<<< HEAD
+
     context "With Valid authentication headers" do
       before do
         @user = create(:user)
@@ -18,7 +18,10 @@ RSpec.describe "Api::V1::Forms", type: :request do
  
       it "returns 200" do
         expect_status(200)
-=======
+      end
+
+    end
+
     context "When form exists" do
 
       context "And is enable" do
@@ -42,7 +45,7 @@ RSpec.describe "Api::V1::Forms", type: :request do
           expect(json['questions'].first).to eql(JSON.parse(@question1.to_json))
           expect(json['questions'].last).to  eql(JSON.parse(@question2.to_json))
         end
->>>>>>> testing-forms
+
       end
 
       context "And is unable" do
