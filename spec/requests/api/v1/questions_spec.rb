@@ -25,7 +25,7 @@ RSpec.describe "Api::V1::Questions", type: :request do
 
         it "question are created with correct data" do
           @question_attributes.each do |field|
-            expect(Question.first[field.first]).to eql(field.last)
+            expect(Question.first[field.first]).to eq(field.last)
           end
         end
 
