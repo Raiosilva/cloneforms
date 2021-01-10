@@ -1,5 +1,5 @@
 class Api::V1::QuestionsController < Api::V1::ApiController
-  before_action :authenticate_api_v1_user!
+  # before_action :authenticate_api_v1_user!
   before_action :set_question, only: [:update, :destroy]
   before_action :set_form  
   before_action :allow_only_owner, only: [:create, :update, :destroy]

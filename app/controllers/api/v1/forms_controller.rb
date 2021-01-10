@@ -1,5 +1,5 @@
 class Api::V1::FormsController < Api::V1::ApiController
-  before_action :authenticate_api_v1_user!, except: [:show]
+  # before_action :authenticate_api_v1_user!, except: [:show]
   before_action :set_form, only: [:show, :update, :destroy]
   before_action :allow_only_owner, only: [:update, :destroy]
  
